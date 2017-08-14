@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AFS</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<div class="header-wrapper">
+    <div class="header-nav-wrapper">
+        <div class="header-nav">
+            <div class="header-contacts row">
+                <span class="col-md-3 col-md-offset-7">Email: info@save-science.org</span>
+            </div>
+            <div class="header-navigation-panel row">
+                <div class="logo col-md-2">
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <ul class="navigation col-md-8">
+                    <li class="dropdown about-dropdown">
+                        about
+                        <ul class="drop-nav about-drop-nav">
+                            <li>about</li>
+                            <li><a href="#content-wrapper">our mission</a></li>
+                            <li><a href="pages/our-team.html">our team</a></li>
+                        </ul>
+                    </li>
+                    <li class="blue-nav-link"><a href="#contact-congress-section">contact congress</a></li>
+                    <li><a href="#shop-section">shop</a></li>
+                    <li class="dropdown engage-dropdown">
+                        engage
+                        <ul class="drop-nav engage-drop-nav">
+                            <li>engage</li>
+                            <li><a href="#">events</a></li>
+                            <li><a href="pages/advocacy.html">advocacy</a></li>
+                            <li><a href="pages/out-projects.html">projects</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">blog</a></li>
+                </ul>
+                <div class="header-donate-holder col-md-2">
+                    <button class="header-donate-button">donate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-header-nav-wrapper row">
+        <div class="open-mobile-menu col-xs-4">
+            <img class="mobile-menu-button" src="images/mobile/burger.png" alt="open menu">
+        </div>
+        <div class="mobile-logo col-xs-4">
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        </div>
+        <div class="mobile-donate-button col-xs-4"><a href="#"></a></div>
+
+        <div class="mobile-menu-opened-wrapper">
+            <div class="mobile-menu-opened-header row">
+                <div class="close-mobile-menu col-xs-4">
+                    <img class="mobile-menu-button" src="images/mobile/burger-close.png" alt="open menu">
+                </div>
+                <div class="mobile-logo col-xs-4">
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+            </div>
+            <div class="mobile-menu-opened">
+                <ul class="mobile-navigation">
+                    <li class="mobile-nav-item">
+                        about
+                        <ul class="embedded-mobile-list">
+                            <li><a href="#content-wrapper">our mission</a></li>
+                            <li><a href="pages/our-team.html">our team</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="blue-color" href="#contact-congress-section">contact congress</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="#shop-section">shop</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        engage
+                        <ul class="embedded-mobile-list">
+                            <li><a href="#">events</a></li>
+                            <li><a href="pages/advocacy.html">advocacy</a></li>
+                            <li><a href="pages/out-projects.html">projects</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-nav-item"><a href="#">blog</a></li>
+                    <li class="mobile-nav-item"><a class="pink-color" href="#">donate</a></li>
+                    <li class="mobile-nav-item" data-toggle="modal" data-target="#myModal">sign up for advocacy</li>
+                </ul>
+                <div class="mobile-nav-social">
+                    <a href="#"><img src="images/mobile/fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/mobile/tw.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-section">
+        <div class="header">
+            <div class="header-about-afs">
+                <div class="row">
+                    <div class="about-afs-text">
+                        <h2 class="header-title">AFS</h2>
+                        <h1 class="header-subtitle">
+                            <b>Academics</b> for the <b>Future</b> of <b>Science</b>
+                            is a <br> nonprofit science policy and
+                            advocacy <br> organization established
+                            by early-career <br> scientists at MIT.
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="header-infographic-wrapper clear">
+                <div class="header-infographic">
+                    <span class="header-infographic-title">The Academic Research Crisis</span>
+                    <p class="header-infographic-text">
+                        It is essential that we rededicate ourselves to
+                        science while making better use of the resources
+                        and talent that are available.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content-wrapper" class="content-wrapper">
+    <div class="content">
+        <div class="about-section">
+            <h3 class="about-title">our mission</h3>
+            <p class="about-mission-text">
+                Our mission is to unite scientists in an online community to develop
+                and advocate for a stronger and more sustainable research ecosystem.
+                Some of our current projects involve creating an effective science
+                advocacy network, engaging in policy discussion and research, creating
+                career opportunities and collaborations, and fostering scientists'
+                engagement with the public.
+            </p>
+            <h4 class="about-subtitle">motivation</h4>
+            <p class="about-motivation-text">
+                Science is a cornerstone of the US innovation economy. It is the basis
+                for new technologies and medical therapies and creates millions of jobs.
+                Over the last 40 years, US academic science has become an increasingly
+                frustrating and inefficient enterprise. Funding is at a 40-year low,
+                there are many more PhD graduates than jobs, PhDs are spending more
+                time in postdoctoral appointments, and we are failing to connect to
+                the public. Time and resources are being wasted fighting for funding,
+                over-training, not integrating well enough with the private sector,
+                and not sharing resources. Early-career scientists are being hit the
+                hardest by these problems and the future of academic research is
+                increasingly bleak. This scientific climate has motivated us to
+                take action.
+            </p>
+        </div>
+        <div class="about-opened-section">
+
+            <div class="row">
+                <div class="about-infographic-block first col-md-6">
+                    <h5 class="infographic-block-title">Research funding in the US is declining:</h5>
+                    <span class="infographic-block-subtitle">R&D as Percent of Total Federal Budget</span>
+                    <img src="images/infographic/percent-of-total-federal.png" alt="diagram">
+                </div>
+                <div class="about-infographic-block second col-md-6">
+                    <h5 class="infographic-block-title">Young investigators ore the most underfunded.</h5>
+                    <span class="infographic-block-subtitle">Percentage of NIH R01 Principal Investigators</span>
+                    <img src="images/infographic/precentage-of-nih.png" alt="diagram">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="about-infographic-block third col-md-6">
+                    <div class="infographic-arrow down-arrow clear">
+                        <img src="images/infographic/arrow-down-50.png" alt="50% decrease">
+                        <span>Decrease in the number of NIH research grants awarded since 2000</span>
+                    </div>
+                </div>
+                <div class="about-infographic-block fourth col-md-6">
+                    <h5 class="infographic-block-title">Сompared to the other parts of the world:</h5>
+                    <div class="infographic-arrow up-and-down-arrows clear">
+                        <img src="images/infographic/arrows.png" alt="50% decrease">
+                        <span>In theshare of worldwide R&D expenditures between 1996 and 2011</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="about-infographic-block fifth col-md-6">
+                    <h5 class="infographic-block-title">NIH/NSF dwarfs outher funding sources per year:</h5>
+                    <img src="images/infographic/nsf-dwarfs.png" alt="diagram">
+                </div>
+                <div class="about-infographic-block sixth col-md-6 clear">
+                    <h5 class="infographic-block-title">Many PhDs are unable to pursue their dreams of becoming academic scientists.</h5>
+                    <img src="images/infographic/people.png" alt="PhD students">
+                    <div class="sixth-block-text-holder">
+                        <span class="percent"><8%</span>
+                        <span>Of PhD students become tenure-track faculty members</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="about-read-more-button-holder">
+            <span class="about-read-more-button">Read more</span>
+        </div>
+    </div>
+    <div id="contact-congress-section" class="contact-congress-section">
+        <div class="contact-congress">
+            <h2 class="contact-congress-title">contact congress</h2>
+            <div class="row">
+                <div class="contact-button-holder button-holder-1 col-xs-6">
+                    <span class="contact-congress-button button-message">Write a message</span>
+                </div>
+                <div class="contact-button-holder button-holder-2 col-xs-6">
+                    <a href="#" class="contact-congress-button button-call">Make a call</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form action="" class="message-forms-wrapper hidden">
+        <h3 class="message-forms-title">HELP SAVE SCIENCE</h3>
+
+        <div class="message-form address-form hidden">
+            <div class="form-steps-map">
+                <img src="images/message-form/step-1.png" alt="step 1">
+                <div class="row">
+                    <span class="col-md-4">enter your address</span>
+                    <span class="col-md-4">choose representatives</span>
+                    <span class="col-md-4">write message</span>
+                </div>
+            </div>
+            <div class="message-form-holder address-form-holder clear">
+                <div class="message-input-holder message-input-address">
+                    <span class="input-title">street address</span>
+                    <input type="text" class="input-address" placeholder="1600 Pennsylvania Ave">
+                </div>
+                <div class="combined-inputs-float-left clear">
+                    <div class="message-input-holder message-input-city">
+                        <span class="input-title">city</span>
+                        <input type="text" class="input-city" placeholder="Washington, DC">
+                    </div>
+                    <div class="message-input-holder message-input-zip">
+                        <span class="input-title">zip code</span>
+                        <input type="text" class="input-zip" placeholder="20500">
+                    </div>
+                </div>
+                <div class="message-form-buttons">
+                    <input type="button" class="step-1-submit" value="Submit">
+                </div>
+            </div>
+        </div>
+
+        <div class="message-form checkbox-form hidden">
+            <div class="form-steps-map">
+                <img src="images/message-form/step-2.png" alt="step 2">
+                <div class="row">
+                    <span class="col-md-4">enter your address</span>
+                    <span class="col-md-4">choose representatives</span>
+                    <span class="col-md-4">write message</span>
+                </div>
+            </div>
+            <div class="message-form-holder checkbox-form-holder clear">
+                <div class="message-input-holder message-input-checkbox">
+                    <span class="input-title">Choose which representatives you'd like to write to:</span>
+                        <div class="row">
+                            <div class="checkbox-column column-left col-md-6">
+                                <input id="check1" type="checkbox">
+                                <label class="checkbox-item" for="check1">
+                                    Sen. Elizabeth Warren
+                                </label>
+                                <input id="check2" type="checkbox">
+                                <label class="checkbox-item" for="check2">
+                                    Sen. Edward Markey
+                                </label>
+                                <input id="check3" type="checkbox">
+                                <label class="checkbox-item" for="check3">
+                                    Sen. Edward Markey
+                                </label>
+                            </div>
+                            <div class="checkbox-column column-right col-md-6">
+                                <input id="check4" type="checkbox">
+                                <label class="checkbox-item" for="check4">
+                                    Sen. Elizabeth Warren
+                                </label>
+                                <input id="check5" type="checkbox">
+                                <label class="checkbox-item" for="check5">
+                                    Sen. Edward Markey
+                                </label>
+                                <input id="check6" type="checkbox">
+                                <label class="checkbox-item" for="check6">
+                                    Sen. Edward Markey
+                                </label>
+                            </div>
+                        </div>
+                </div>
+                <div class="message-form-buttons">
+                    <input type="button" class="step-2-back" value="Back">
+                    <input type="button" class="step-2-submit" value="Submit">
+                </div>
+            </div>
+        </div>
+
+        <div class="message-form write-message-form hidden">
+            <div class="form-steps-map">
+                <img src="images/message-form/step-3.png" alt="step 3">
+                <div class="row">
+                    <span class="col-md-4">enter your address</span>
+                    <span class="col-md-4">choose representatives</span>
+                    <span class="col-md-4">write message</span>
+                </div>
+            </div>
+            <div class="message-form-holder write-message-form-holder clear">
+                <div class="message-input-holder message-input-subject">
+                    <div class="half-width">
+                        <span class="input-title">subject</span>
+                        <input type="text" class="input-subject" placeholder="Funding for Academic Research">
+                    </div>
+                    <span class="guideline">
+                        GUIDELINES: Feel free to personalize this email template
+                        with a message about why science funding is important to
+                        you or how you have been impacted by the funding crisis.
+                        Personal stories are what changes policy. Please choose
+                        the topic most closely related to Science at the bottom
+                        of this form.
+                    </span>
+                </div>
+                <div class="message-input-holder message-input-message-text">
+                    <span class="input-title">message</span>
+                    <textarea class="input-message-text" placeholder="Message text"></textarea>
+                </div>
+                <div class="half-width">
+                    <div class="message-input-holder message-input-email">
+                            <span class="input-title">your email address</span>
+                            <input type="text" class="input-email" placeholder="example@gmail.com">
+                    </div>
+                    <div class="combined-inputs clear">
+                        <div class="message-input-holder message-input-first-name">
+                            <span class="input-title">first name</span>
+                            <input type="text" class="input-first-name" placeholder="John">
+                        </div>
+                        <div class="message-input-holder message-input-last-name">
+                            <span class="input-title">last name</span>
+                            <input type="text" class="input-last-name" placeholder="Doe">
+                        </div>
+                    </div>
+                    <div class="combined-inputs clear">
+                        <div class="message-input-holder message-select-prefix">
+                            <span class="input-title">prefix</span>
+                            <label class="select-arrow" for="">
+                                <select name="" id="">
+                                    <option value="Abortion">Prefix</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="message-input-holder message-input-phone">
+                            <span class="input-title">phone number</span>
+                            <input type="text" class="input-message-input-phone" placeholder="+1 (234) 567-8910">
+                        </div>
+                    </div>
+                    <div class="message-input-holder message-select-topic">
+                        <span class="input-title">sen. warren's topic</span>
+                        <label class="select-arrow" for="">
+                            <select name="" id="">
+                                    <option value="Abortion">Abortion</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="message-input-holder message-select-topic">
+                        <span class="input-title">sen. markeys's topic</span>
+                        <label class="select-arrow" for="">
+                            <select name="" id="">
+                                <option value="Abortion">Abortion</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="message-input-holder message-select-topic">
+                        <span class="input-title">sen. capuano's topic</span>
+                        <label class="select-arrow" for="">
+                            <select name="" id="">
+                                <option value="Abortion">Abortion</option>
+                            </select>
+                        </label>
+                </div>
+                </div>
+
+                <div class="side-guideline-holder">
+                    <span class="guideline">
+                        Thees topic fields are reqired by members of
+                        Congress to submit messages via their contact forms.
+                </span>
+                </div>
+
+                <div class="message-form-buttons">
+                    <input type="button" class="step-3-back" value="Back">
+                    <input type="submit" class="step-3-submit" value="Submit">
+                </div>
+            </div>
+        </div>
+
+        <div class="message-form done-form hidden">
+            <div class="form-steps-map">
+                <img src="images/message-form/done.png" alt="done">
+                <div class="row">
+                    <span class="col-md-4">enter your address</span>
+                    <span class="col-md-4">choose representatives</span>
+                    <span class="col-md-4">write message</span>
+                </div>
+            </div>
+            <div class="message-form-holder done-form-holder clear">
+                <div class="message-input-holder message-done">
+                    <span class="input-title">Message was successfully sent</span>
+                    <img class="sent-image" src="images/message-form/sent.svg" alt="sent">
+                </div>
+                <div class="message-form-buttons">
+                    <input type="button" class="done-close" value="Close">
+                    <input type="button" class="done-new-message" value="Write a message">
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+    <div id="shop-section" class="shop-section">
+        <h3 class="shop-title">shop</h3>
+        <p class="shop-subtitle">All earned money will go on sciense advocacy.</p>
+        <div class="row">
+            <div class="shop-item col-md-4">
+                <a href="#">
+                    <img src="images/tshirts/1.png" alt="shop item">
+                    <span class="shop-item-cost">$25</span>
+                </a>
+                <span class="shop-item-title">Skull tshirt multi Men's</span>
+                <span class="mobile-price">25%</span>
+            </div>
+            <div class="shop-item col-md-4">
+                <a href="#">
+                    <img src="images/tshirts/2.png" alt="shop item">
+                    <span class="shop-item-cost">$25</span>
+                </a>
+                <span class="shop-item-title">AFS women's logo2 tshirt</span>
+                <span class="mobile-price">25%</span>
+            </div>
+            <div class="shop-item col-md-4">
+                <a href="#">
+                    <img src="images/tshirts/3.png" alt="shop item">
+                    <span class="shop-item-cost">$25</span>
+                </a>
+                <span class="shop-item-title">AFS women's blue skull tshirt</span>
+                <span class="mobile-price">25%</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="shop-item col-md-4">
+                <a href="#">
+                    <img src="images/tshirts/4.png" alt="shop item">
+                    <span class="shop-item-cost">$25</span>
+                </a>
+                <span class="shop-item-title">AFS men's blue skull tshirt</span>
+                <span class="mobile-price">25%</span>
+            </div>
+            <div class="shop-item col-md-4">
+                <a href="#">
+                    <img src="images/tshirts/5.png" alt="shop item">
+                    <span class="shop-item-cost">$25</span>
+                </a>
+                <span class="shop-item-title">AFS men's logo t white</span>
+                <span class="mobile-price">25%</span>
+            </div>
+            <div class="shop-item col-md-4">
+                <a href="#">
+                    <img src="images/tshirts/6.png" alt="shop item">
+                    <span class="shop-item-cost">$25</span>
+                </a>
+                <span class="shop-item-title">AFS women's skull tshirt multi</span>
+                <span class="mobile-price">25%</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="shop-item col-md-4">
+                <a href="#">
+                    <img src="images/tshirts/7.png" alt="shop item">
+                    <span class="shop-item-cost">$25</span>
+                </a>
+                <span class="shop-item-title">AFS unisex logo hoodie</span>
+                <span class="mobile-price">25%</span>
+            </div>
+            <div class="shop-item col-md-4">
+                <a href="#">
+                    <img src="images/tshirts/8.png" alt="shop item">
+                    <span class="shop-item-cost">$25</span>
+                </a>
+                <span class="shop-item-title">AFS logo t women's</span>
+                <span class="mobile-price">25%</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="side-form-closed clear">
+    <a href="#"><img src="images/tw-icon.png" alt="Twitter"></a>
+    <a href="#"><img src="images/fb-icon.png" alt="Facebook"></a>
+    <span class="side-form-open-button" data-toggle="modal" data-target="#myModal">Sign up for advocacy</span>
+</div>
+
+<div class="side-form-opened-wrapper modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div role="document">
+        <form class="side-form-opened modal-content" action="">
+            <span class="side-form-title">sing up for advocacy</span>
+            <div class="side-form clear">
+
+                <div class="side-form-email">
+                    <span class="side-form-field-title">your email address</span>
+                    <input class="side-form-input" type="text" placeholder="example@gmail.com">
+                </div>
+
+                <div class="side-form-first-name">
+                    <span class="side-form-field-title">first name</span>
+                    <input class="side-form-input" type="text" placeholder="John">
+                </div>
+
+                <div class="side-form-last-name">
+                    <span class="side-form-field-title">last name</span>
+                    <input class="side-form-input" type="text" placeholder="Doe">
+                </div>
+
+                <div class="side-form-address">
+                    <span class="side-form-field-title">address</span>
+                    <input class="side-form-input" type="text" placeholder="Street Address">
+                </div>
+
+                <div class="side-form-country">
+                    <label class="select-arrow">
+                        <select class="side-form-select" name="" id="">
+                            <option value="USA">USA</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="side-form-city">
+                    <input class="side-form-input" type="text" placeholder="City">
+                </div>
+
+                <div class="side-form-state">
+                    <label class="select-arrow">
+                        <select class="side-form-select" name="" id="">
+                            <option value="Texas">Texas</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="side-form-zip">
+                    <input class="side-form-input" type="text" placeholder="Postal/Zip">
+                </div>
+
+                <div class="side-form-button">
+                    <input class="side-form-submit" type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="footer-wrapper">
+    <div class="footer row">
+        <div class="col-xs-7"><span>Academics for the Future of Science, Inc.</span></div>
+        <div class="col-xs-5"><span class="footer-email">Email: info@save-science.org</span></div>
+    </div>
+</div>
+
+</body>
+</html>

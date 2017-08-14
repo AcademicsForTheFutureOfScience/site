@@ -1,0 +1,55 @@
+.advocacy-section-wrapper {
+  width: 100%;
+  margin-top: 100px;
+  .advocacy-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    > .row {
+      margin: 100px -15px 0 -15px;
+    }
+    .advocacy-title {
+      color: $mainDark;
+      font: 30px "SF UI Display";
+      font-weight: bold;
+      line-height: 36px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    .advocacy-block-title {
+      color: $mainDark;
+      font: 26px "SF UI Display";
+      font-weight: bold;
+      line-height: 31px;
+    }
+    .advocacy-text {
+      color: $mainDark;
+      font: 22px "SF UI Display Light";
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .advocacy-section-wrapper {
+    margin-top: 50px;
+    .advocacy-section {
+      padding: 0 20px;
+      .row {
+        margin-top: 0;
+        .col-md-6 {
+          margin-top: 30px;
+        }
+      }
+      .advocacy-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .advocacy-text {
+        font-size: 16px;
+      }
+      .advocacy-block-title {
+        font-size: 18px;
+      }
+    }
+  }
+}

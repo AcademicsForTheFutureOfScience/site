@@ -1,0 +1,153 @@
+.project-open-wrapper {
+  width: 100%;
+  margin-top: 40px;
+  .project-open {
+    max-width: 1000px;
+    margin: 0 auto;
+    .back-button {
+      text-align: left;
+      > a {
+        display: inline-block;
+        position: relative;
+        height: 50px;
+        width: 175px;
+        border-radius: 5px;
+        background: $mainBlue;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+        color: #FFFFFF;
+        font: 30px "SF UI Display Light";
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+        &:after {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          top: 50%;
+          margin-top: -6px;
+          left: 20px;
+          margin-right: 0;
+          border-right: 4px solid #fff;
+          border-top: 4px solid #fff;
+          -webkit-transform: rotateX(0deg) rotateZ(225deg);
+          -moz-transform: rotateX(0deg) rotateZ(225deg);
+          -ms-transform: rotateX(0deg) rotateZ(225deg);
+          -o-transform: rotateX(0deg) rotateZ(225deg);
+          transform: rotateX(0deg) rotateZ(225deg);
+        }
+      }
+    }
+    .project-open-image {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .project-open-title {
+      display: block;
+      color: $mainDark;
+      font: 24px "SF UI Display Light";
+      font-weight: 600;
+      line-height: 29px;
+      text-transform: uppercase;
+      margin-top: 50px;
+    }
+    .project-open-date {
+      display: block;
+      color: #9B9B9B;
+      font: 24px "SF UI Display Light";
+      line-height: 29px;
+      margin-top: 20px;
+    }
+    .project-open-register-link {
+      display: block;
+      color: $mainDark;
+      font: 20px "SF UI Display Light";
+      line-height: 24px;
+      margin-top: 20px;
+      > a {
+        color: $mainBlue;
+      }
+    }
+    .project-open-about {
+      color: $mainDark;
+      font: 18px "SF UI Display";
+      line-height: 21px;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .project-open-wrapper .project-open {
+    padding: 0 15px;
+    .back-button {
+      display: none;
+    }
+    .project-open-image > img {
+      width: 100%;
+    }
+    .project-open-title,
+    .project-open-date,
+    .project-open-register-link,
+    .project-open-about {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .mobile-buttons {
+      text-align: center;
+      margin-top: 50px;
+      .prev-button,
+      .next-button {
+        display: inline-block;
+        width: 140px;
+        height: 40px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+        color: #fff;
+        font: 20px "SF UI Display Light";
+        line-height: 40px;
+        text-align: center;
+        text-transform: capitalize;
+        position: relative;
+        text-decoration: none;
+        &:after {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          width: 13px;
+          height: 13px;
+          top: 50%;
+          margin-top: -6px;
+          margin-right: 0;
+          border-right: 4px solid #fff;
+          border-top: 4px solid #fff;
+          -webkit-transform: rotateX(0deg) rotateZ(225deg);
+          -moz-transform: rotateX(0deg) rotateZ(225deg);
+          -ms-transform: rotateX(0deg) rotateZ(225deg);
+          -o-transform: rotateX(0deg) rotateZ(225deg);
+          transform: rotateX(0deg) rotateZ(225deg);
+        }
+      }
+      .prev-button {
+        background: $mainBlue;
+        float: left;
+        &:after {
+          left: 15px;
+        }
+      }
+      .next-button {
+        background: $mainPink;
+        float: right;
+        &:after {
+          right: 15px;
+          -webkit-transform: rotateX(0deg) rotateZ(45deg);
+          -moz-transform: rotateX(0deg) rotateZ(45deg);
+          -ms-transform: rotateX(0deg) rotateZ(45deg);
+          -o-transform: rotateX(0deg) rotateZ(45deg);
+          transform: rotateX(0deg) rotateZ(45deg);
+        }
+      }
+    }
+  }
+}

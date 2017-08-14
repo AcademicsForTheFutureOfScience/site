@@ -1,0 +1,101 @@
+.dropdown.active:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 130%;
+  height: 4px;
+  background: $mainPink;
+  top: 100%;
+  left: -1px;
+}
+
+.our-team-section-wrapper {
+  width: 100%;
+  margin-top: 40px;
+  .our-team-section {
+    max-width: 1020px;
+    margin: 0 auto;
+    .back-button {
+      text-align: left;
+      margin-bottom: 42px;
+      > a {
+        display: inline-block;
+        height: 50px;
+        width: 175px;
+        border-radius: 5px;
+        background: $mainBlue;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+        color: #fff;
+        font: 30px "SF UI Display Light";
+        line-height: 50px;
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+        &:after {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          top: 50%;
+          margin-top: -6px;
+          left: 20px;
+          margin-right: 0;
+          border-right: 4px solid #fff;
+          border-top: 4px solid #fff;
+          -webkit-transform: rotateX(0deg) rotateZ(225deg);
+          -moz-transform: rotateX(0deg) rotateZ(225deg);
+          -ms-transform: rotateX(0deg) rotateZ(225deg);
+          -o-transform: rotateX(0deg) rotateZ(225deg);
+          transform: rotateX(0deg) rotateZ(225deg);
+        }
+      }
+    }
+    .row {
+      margin-bottom: 86px;
+    }
+    .team-member-holder {
+      max-width: 310px;
+      margin: 0 auto;
+      .team-member-photo {
+        text-align: center;
+      }
+      .team-member-name {
+        display: block;
+        color: $mainDark;
+        font: 24px "SF UI Display";
+        font-weight: bold;
+        line-height: 29px;
+      }
+      .team-member-afs-position {
+        display: block;
+        color: $mainDark;
+        font: 18px "SF UI Display";
+        font-weight: bold;
+        line-height: 29px;
+      }
+      .team-member-about {
+        display: block;
+        color: $mainDark;
+        font: 19px "SF UI Display Light";
+        > a {
+          color: $mainBlue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .back-button {
+    padding: 0 30px;
+  }
+  .our-team-section-wrapper .our-team-section {
+    .row {
+      margin-bottom: 0;
+    }
+    .team-member-holder {
+      margin-bottom: 60px;
+    }
+  }
+}

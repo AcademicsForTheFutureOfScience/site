@@ -1,0 +1,116 @@
+.projects-section-wrapper {
+  width: 100%;
+  margin-top: 50px;
+  .projects-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    .projects-section-title {
+      color: $mainDark;
+      font: 30px "SF UI Display";
+      font-weight: bold;
+      line-height: 36px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .project-wrapper {
+      margin-top: 44px;
+      .project-image {
+        float: left;
+        width: 35%;
+      }
+      .project-details {
+        float: right;
+        width: 62%;
+        .project-title {
+          display: block;
+          color: $mainDark;
+          font: 20px "SF UI Display Light";
+          font-weight: 600;
+          line-height: 24px;
+          text-transform: uppercase;
+        }
+        .project-date {
+          display: block;
+          color: #9b9b9b;
+          font: 20px "SF UI Display Light";
+          line-height: 24px;
+          margin-top: 5px;
+        }
+        .project-register-link {
+          display: block;
+          color: $mainDark;
+          font: 18px "SF UI Display Light";
+          line-height: 21px;
+          text-transform: uppercase;
+          margin-top: 12px;
+          > a {
+            color: $mainBlue;
+            text-transform: lowercase;
+            font-size: 17px;
+          }
+        }
+        .project-about {
+          color: $mainDark;
+          font: 18px "SF UI Display Light";
+          line-height: 21px;
+          margin-top: 15px;
+        }
+        .read-more-button {
+          text-align: center;
+          margin-top: 17px;
+          > a {
+            display: inline-block;
+            width: 160px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: $mainBlue;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+            color: #fff;
+            font: 26px "SF UI Display Light";
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .projects-section-wrapper .projects-section {
+    .projects-section-title {
+      font-size: 18px;
+    }
+    .project-wrapper {
+      &:first-of-type {
+        margin-top: 2px;
+      }
+      .project-image,
+      .project-details {
+        float: none;
+        width: 100%;
+      }
+      .project-image {
+        text-align: center;
+      }
+      .project-details {
+        padding: 0 16px;
+        .project-title,
+        .project-date,
+        .project-register-link,
+        .project-about {
+          font-size: 16px;
+        }
+        .read-more-button {
+          > a {
+            width: 140px;
+            height: 40px;
+            font-size: 20px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
